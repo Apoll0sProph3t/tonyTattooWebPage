@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Tattoo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app-container">
+        <header id="header">
+            <div class="logo-box">
+                <span class="logo-t-1">T</span><span class="logo-t-2">T</span>
+            </div>
+            <h1 class="main-title">Tony Tattoo</h1>
+            <div class="main-tabs">
+                <button class="main-tab-btn active" data-target="about-section">Sobre Mim</button>
+                <button class="main-tab-btn" data-target="portfolio-section">Conheça meu trabalho</button>
+            </div>
+        </header>
+
+        <main id="content-area">
+            <section id="about-section" class="main-tab-content active">
+                <div class="carousel-container">
+                    <div class="carousel-slide active about-slide">
+                        <div class="about-content">
+                            <img src="aboutMePhoto/snapgram.io_Tony-tattoo.jpg" class="about-photo" alt="Tony Tattoo">
+                            <div class="about-text">
+                                <h2>Quem é Tony Tattoo?</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.<br>
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.<br>
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <p class="quote">"Transforme a sua ideia em realidade"</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <p class="quote">"Trabalhando com todos os estilos. Venha fazer seu orçamento!"</p>
+                    </div>
+                </div>
+                <button id="next-btn" class="carousel-next-btn"><i class="fas fa-arrow-right"></i></button>
+            </section>
+
+            <!-- PORTFÓLIO -->
+            <section id="portfolio-section" class="main-tab-content">
+                <div class="sub-tabs">
+                    <button class="sub-tab-btn active" data-target="images-gallery-content">Imagens</button>
+                    <button class="sub-tab-btn" data-target="videos-gallery-content">Vídeos</button>
+                </div>
+                
+                <!-- Sub-aba de Imagens -->
+                <div id="images-gallery-content" class="sub-tab-content active">
+                    <div class="gallery-wrapper">
+                        <button id="prev-gallery-btn" class="gallery-btn"><i class="fas fa-chevron-left"></i></button>
+                        <div class="gallery-container">
+                            <img src="tattooPics/snapgram.io_download-file.jpg" class="gallery-slide active" alt="Tattoo 1">
+                            <img src="tattooPics/snapgram.io_download-file (1).jpg" class="gallery-slide" alt="Tattoo 2">
+                            <img src="tattooPics/snapgram.io_download-file (2).jpg" class="gallery-slide" alt="Tattoo 3">
+                        </div>
+                        <button id="next-gallery-btn" class="gallery-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Sub-aba de Vídeos -->
+                <div id="videos-gallery-content" class="sub-tab-content">
+                    <div class="gallery-wrapper">
+                        <button id="prev-video-btn" class="gallery-btn"><i class="fas fa-chevron-left"></i></button>
+                        <div class="gallery-container">
+                            <video class="video-slide active" controls>
+                                <source src="tattooVideos/snapgram.io_download-file.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos.
+                            </video>
+                            <video class="video-slide" controls>
+                                <source src="tattooVideos/snapgram.io_download-file (1).mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos.
+                            </video>
+                            <video class="video-slide" controls>
+                                <source src="tattooVideos/snapgram.io_download-file (2).mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos.
+                            </video>
+                        </div>
+                        <button id="next-video-btn" class="gallery-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <h2 class="footer-title">Entre em contato comigo</h2>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+            </div>
+            <p class="footer-address">Rua Exemplo, 123 - Centro, Cidade - Estado, 00000-000</p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

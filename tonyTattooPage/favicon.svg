@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap');
+        .t { font-family: 'UnifrakturMaguntia', serif; fill: #ffffff; font-size: 56px; line-height: 1; }
+    </style>
+    <rect width="96" height="96" rx="12" fill="#000000" />
+    <text x="30" y="62" class="t">T</text>
+    <text x="40" y="76" class="t">T</text>
+</svg>
